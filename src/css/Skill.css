@@ -2,15 +2,21 @@
     width: 30%;
     float: left;
     height: 500px;
-    background-color: #777;
+}
+.skill .body_wrap .user .img{
+    width: 200px;
+    height: 200px;
+    margin: 50px auto ;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.skill .body_wrap .user p{
+    font-size: 20px;
 }
 .skill .body_wrap .skill_right{
     width: 70%;
 }
-.skill .body_wrap .skill_right .skill_right_top{
-    width: 100%;
-    height: 400px;
-}
+
 .skill .body_wrap .skill_right .skill_right_top .box{
     text-align: left;
     padding: 40px;
@@ -29,15 +35,15 @@
     position: absolute;
     width: 3px;
     height: 100%;
-    background-color: #777;
+    background-color: #45625e;
     left: -10px;
     top: 0%;
 }
 .skill .body_wrap .skill_right .skill_right_bottom .box{
-    width: 80px;
+    width: calc((100% - 32px) / 8);
     height: 80px;
+    margin: 0 2px;
     background-size: 100%;
-    margin-right: 5px;
     float: left;
     background-repeat: no-repeat;
 }
@@ -55,11 +61,20 @@
 }
 .skill .body_wrap .skill_right .skill_right_bottom .box.node{
     background-image: url('../images/nodejs.jpg');
-    width: 160px;
+    width: calc((100% - 32px) / 8*2);
 }
 .skill .body_wrap .skill_right .skill_right_bottom .box.pho{
     background-image: url('../images/pho.png');
 }
 .skill .body_wrap .skill_right .skill_right_bottom .box.ai{
     background-image: url('../images/Ai.png');
+}
+@media (max-width:1240px) {
+    .skill .body_wrap .skill_right .skill_right_top .box{
+        font-size: 14px;
+        padding-top: 60px;
+    }
+    .skill .body_wrap .user{
+        padding-top: 40px;
+    }
 }

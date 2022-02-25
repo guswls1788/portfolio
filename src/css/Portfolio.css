@@ -11,7 +11,6 @@
     color: #fff;
     transition: flex .4s ease;
     position: relative;
-    cursor: pointer;
     padding:0 50px;
   }
   
@@ -26,21 +25,37 @@
   .section .content {
     z-index: 2;
   }
-  .section .content a{
+  .section .content > a{
     color: #fff;
+    display: block;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    position: absolute;
     text-decoration: none;
+    left: 0;
+    top: 0;
+    padding-top: 120px;
   }
   .section .content .desc{
     transition: .8s ;
     display: none;
   }
+  .section .content .desc p{
+    line-height: 24px;
+  }
   .section .content .desc button{
     border: 1px solid #fff;
     transition: .5s;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: transparent;
+    position: absolute;
   }
   .section .content .desc button a{
     padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
     display:block;
   }
   .section .content .desc button:hover{
@@ -55,10 +70,6 @@
   .section:hover .desc{
     display: block;
   }
-  /* .section:hover .overlay {
-    background-color: rgba(0, 0, 0, 0.95);
-  } */
-  
   #starbucks {
     background-image: url('../images/starbucks.jpg');
   }
@@ -76,3 +87,40 @@
   #naverbook {
       background-color: saddlebrown;
   }
+@media (max-width:1240px) {
+  .portfolio .container{
+    margin-top: 60px;
+  }
+  .portfolio .section{
+    padding: 0 20px;
+  }
+  .section .content > a{
+    padding-top: 80px;
+  }
+}
+@media (max-width:900px) {
+  .portfolio .section{
+    height: 90%;
+    margin-top: 5%;
+  }
+}
+@media (max-width:740px) {
+  .portfolio .container{
+    flex-direction: column;
+  }
+  .portfolio .section{
+    height: 90%;
+    margin: 0;
+  }
+  .section .content > a{
+    padding-top: 20px;
+  }
+  .section .content .desc p{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .section .content .desc button a{
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

@@ -1,4 +1,6 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 body{
+  font-family: 나눔스퀘어, 'NanumSquare', sans-serif;
   position: relative;
   background-position: center;
   background-image: url('./images/back.jpg');
@@ -23,12 +25,12 @@ body{
 }
 .container {
   display: flex;
-  height: 500px;
+    width: calc(100%-100px);
+    height: 500px;
   overflow: hidden;
-  width: 90%;
   padding: 50px;
 }
-.body_wrap .img_box .img{
+.body_wrap .img_box .main_img{
   background-image: url('./images/main1.png');
   height: 605px;
   width: 1080px;
@@ -37,10 +39,10 @@ body{
   background-position: center;
   display: none;
 }
-.body_wrap .img_box .img:nth-child(2){
+.body_wrap .img_box .main_img:nth-child(2){
   background-image: url('./images/main2.png');
 }
-.body_wrap .img_box .img:nth-child(3){
+.body_wrap .img_box .main_img:nth-child(3){
   background-image: url('./images/main3.png');
 }
 .body_wrap .img_box .name{
@@ -63,7 +65,7 @@ body{
   width: 2px;
   height: .5px;
   border: 0;
-  margin: 5px 0;
+  margin: 20px 0;
   position: relative;
   background-color: #fff;
   transition: .3s;
@@ -72,9 +74,66 @@ body{
 .full-page-controls button:last-child{
   display: none;
 }
+.full-page-controls button::after{
+  content: "";
+  position: absolute;
+  font-size: 10px;
+  width: auto;
+  height: 10px;
+  right: 0;
+  top: -10px;
+  font-weight: bold;
+  display: none;
+  text-align: right;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #45625e;
+}
+.full-page-controls button:nth-of-type(2):after{
+  content: "Home";
+}
+.full-page-controls button:nth-of-type(3):after{
+  content: "Skill";
+}
+.full-page-controls button:nth-of-type(4):after{
+  content: "Portfolio";
+}
+.full-page-controls button:nth-of-type(5):after{
+  content: "Contact";
+}
 .full-page-controls button:disabled{
-  width: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-  height:10px;
+  background-color: transparent;
+}
+.full-page-controls button:disabled::after{
+  display: block;
+}
+@media (max-width:1240px) {
+  .body_wrap{
+    max-width: 80%;
+    overflow: hidden;
+  }
+  .container{
+    height: 60%;
+    margin-top: 20px;
+  }
+  .body_wrap .img_box .main_img{
+    width: 100%;
+  }
+  .body_wrap .img_box .name{
+    display: none;
+  }
+}
+@media (max-width:740px) {
+  .body_wrap{
+    background-image: url('./images/m_middle.png');
+    height: 100%;
+    width: auto;
+    top: 50px;
+  }
+  .body_wrap .img_box .main_img{
+    width: 130%;
+    left: -15%;
+    position: absolute;
+  }
 }
