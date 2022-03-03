@@ -15,6 +15,7 @@
 }
 .skill .body_wrap .skill_right{
     width: 70%;
+    float: left;
 }
 
 .skill .body_wrap .skill_right .skill_right_top .box{

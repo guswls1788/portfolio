@@ -18,13 +18,14 @@ body{
   height: 605px;
   background-size: 100%;
   background-position: center;
-  margin: 0 auto ;
+  margin: auto ;
   background-repeat: no-repeat;
   position: relative;
-  top: 50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .container {
-  display: flex;
+  display: block;
     width: calc(100%-100px);
     height: 500px;
   overflow: hidden;
@@ -55,6 +56,7 @@ body{
 }
 .full-page-controls{
   right: 10px;
+  z-index: 99;
   top: 50%;
   transform: translateY(-50%);
   position: fixed;
@@ -63,11 +65,15 @@ body{
   font-size: 0;
   display: block;
   width: 2px;
-  height: .5px;
+  background-image: url('./images/controls_button.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15px;
+  cursor: pointer;
   border: 0;
-  margin: 20px 0;
+  margin: 6px 0;
   position: relative;
-  background-color: #fff;
+  background-color: transparent;
   transition: .3s;
 }
 .full-page-controls button:first-child,
@@ -81,7 +87,7 @@ body{
   width: auto;
   height: 10px;
   right: 0;
-  top: -10px;
+  top: -2px;
   font-weight: bold;
   display: none;
   text-align: right;
@@ -100,6 +106,9 @@ body{
   content: "Portfolio";
 }
 .full-page-controls button:nth-of-type(5):after{
+  content: "Design";
+}
+.full-page-controls button:nth-of-type(6):after{
   content: "Contact";
 }
 .full-page-controls button:disabled{

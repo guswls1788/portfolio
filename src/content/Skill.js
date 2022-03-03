@@ -1,12 +1,11 @@
-import { Component } from 'react';
+import { useEffect, useState } from "react"
 import '../css/Skill.css'
 
-class Skill extends Component {
-  render() {
+function Skill() {
     return(
       <div className='skill body_box'>
         <div className='body_wrap'>
-           <div class="container">
+           <div className="container">
             <div className='user'>
               <div className='img'></div>
               <p>김현진</p>
@@ -31,7 +30,6 @@ class Skill extends Component {
                 <div class="box css"></div>
                 <div class="box js"></div>
                 <div class="box react"></div>
-                <div class="box node"></div>
                 <div class="box pho"></div>
                 <div class="box ai"></div>
               </div>
@@ -40,6 +38,5 @@ class Skill extends Component {
         </div>
       </div>
     )
-  }
 }
 export default Skill;

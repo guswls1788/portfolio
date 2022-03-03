@@ -1,16 +1,14 @@
-import { Component } from 'react';
+import { useEffect, useState } from "react"
 
-class Home extends Component {
-  componentDidMount(){
-    const length=document.getElementsByClassName("main_img").length
-    console.log(length)
-    const random=Math.floor(Math.random()*length)
-    console.log(random)
-    // console.log(document.getElementsByClassName("img")[0])
-    document.getElementsByClassName("main_img")[random].style.display="block"
-    // document.getElementsByClassName("img")[1].style.display="block"
-  }
-  render() {
+function Home(){
+    useEffect(()=>{
+
+      const length=document.getElementsByClassName("main_img").length
+      const random=Math.floor(Math.random()*length)
+      // console.log(document.getElementsByClassName("img")[0])
+      document.getElementsByClassName("main_img")[random].style.display="block"
+      // document.getElementsByClassName("img")[1].style.display="block"
+    })
     return(
       <div className='home body_box'>
         <div className='body_wrap'>
@@ -24,6 +22,5 @@ class Home extends Component {
         </div>
       </div>
     )
-  }
 }
 export default Home;

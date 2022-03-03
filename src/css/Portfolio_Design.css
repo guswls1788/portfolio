@@ -1,0 +1,164 @@
+
+  .Portfolio_Design .container{
+    display: flex;
+  }
+  .Portfolio_Design .section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    transition: flex .4s ease;
+    position: relative;
+    padding:0 50px;
+  }
+  
+  .Portfolio_Design .section .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    transition: .8s ease;
+  }
+  
+  .Portfolio_Design .section .content {
+    z-index: 2;
+  }
+  .Portfolio_Design .section .content > a{
+    color: #fff;
+    display: block;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    position: absolute;
+    text-decoration: none;
+    left: 0;
+    top: 0;
+    padding-top: 120px;
+  }
+  .Portfolio_Design  .section .content .desc{
+    transition: .8s ;
+    display: none;
+  }
+  .Portfolio_Design .section .content .desc p{
+    line-height: 24px;
+  }
+  .Portfolio_Design .section .content .desc button{
+    border: 1px solid #fff;
+    transition: .5s;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+  }
+  .Portfolio_Design .section .content .desc button a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    display:block;
+  }
+  .Portfolio_Design .section .content .desc button:hover{
+    background-color: #fff;
+  }
+  .Portfolio_Design .section .content .desc button:hover a{
+    color: #222;
+  }
+  .Portfolio_Design .section:hover {
+    flex: 2;
+  }
+  .Portfolio_Design .section:hover .desc{
+    display: block;
+  }
+  .Portfolio_Design  #wedding {
+    background-image: url('../images/Img_desigin_01.png');
+  }
+  .Portfolio_Design #mama {
+    background-image: url('../images/Img_desigin_02.png');
+  }
+  .Portfolio_Design #NATURE {
+    background-image: url('../images/Img_desigin_03.png');
+  }
+  .Portfolio_Design .modal_back{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255,255,255,0.7);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+  }
+  .Portfolio_Design .modal_back #modal_wrap{
+      width: 60%;
+      background-color: #fff;
+      margin: 0 auto;
+      margin-top: 50px;
+      overflow-y: scroll;
+      position: relative;
+        height: 600px;
+        background-size: cover;
+  }
+  .Portfolio_Design .modal_back #modal_wrap .modal_img{
+      width: 100%;
+      height: 1190px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+  }
+  .Portfolio_Design .modal_back #modal_wrap #img{
+    width: 100%;
+  }
+  .Portfolio_Design .modal_back #modal_wrap #close{
+      width: 30px;
+      height: 30px;
+      position: fixed;
+      right: 17%;
+      top: 50px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../images/cancel.png');
+  }
+@media (max-width:1240px) {
+  .Portfolio_Design .container{
+    margin-top: 60px;
+  }
+  .Portfolio_Design .section{
+    padding: 0 20px;
+  }
+  .Portfolio_Design .section .content > a{
+    padding-top: 80px;
+  }
+}
+@media (max-width:900px) {
+  .Portfolio_Design .section{
+    height: 90%;
+    margin-top: 5%;
+  }
+}
+@media (max-width:740px) {
+  .Portfolio_Design .container{
+    flex-direction: column;
+  }
+  .Portfolio_Design .section{
+    height: 90%;
+    margin: 0;
+  }
+  .Portfolio_Design .section .content > a{
+    padding-top: 20px;
+  }
+  .Portfolio_Design  .section .content .desc p{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .Portfolio_Design .section .content .desc button a{
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
