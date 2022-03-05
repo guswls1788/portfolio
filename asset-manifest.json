@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6c4a7b8a.css",
-    "main.js": "/portfolio/static/js/main.9ab33878.js",
+    "main.css": "/portfolio/static/css/main.bf3a0d68.css",
+    "main.js": "/portfolio/static/js/main.9f72bcb6.js",
     "static/js/787.edd59a96.chunk.js": "/portfolio/static/js/787.edd59a96.chunk.js",
     "static/media/Img_desigin_01.png": "/portfolio/static/media/Img_desigin_01.35a39637b1a42a6424f0.png",
     "static/media/pull0.png": "/portfolio/static/media/pull0.b7a35faf4ce56f086bd6.png",
     "static/media/starbucks.jpg": "/portfolio/static/media/starbucks.d116bc8ef8fb1504e9b1.jpg",
     "static/media/nhis.jpg": "/portfolio/static/media/nhis.cad9211c512b0f88fdbc.jpg",
     "static/media/Img_desigin_03.png": "/portfolio/static/media/Img_desigin_03.0199f3e4e4ca4ed0b3a7.png",
+    "static/media/mini_shopping.jpg": "/portfolio/static/media/mini_shopping.29a397f2d7bc1a53b778.jpg",
     "static/media/Img_desigin_02.png": "/portfolio/static/media/Img_desigin_02.34624812ac57456b93fa.png",
     "static/media/desigin_01.png": "/portfolio/static/media/desigin_01.63146910d79b378d3b4f.png",
     "static/media/desigin_03.png": "/portfolio/static/media/desigin_03.b43e07691d8a0dde0f2e.png",
@@ -16,6 +17,7 @@
     "static/media/main3.png": "/portfolio/static/media/main3.2af2d9a399d3fcc273ab.png",
     "static/media/main1.png": "/portfolio/static/media/main1.3ecae2e3429b153fa155.png",
     "static/media/main2.png": "/portfolio/static/media/main2.6bf342b46bd4bb577c12.png",
+    "static/media/pull2.PNG": "/portfolio/static/media/pull2.98668a9bdea7115e22b6.PNG",
     "static/media/back.jpg": "/portfolio/static/media/back.c2f2905e7f97035522ce.jpg",
     "static/media/KakaoTalk_20220217_134854039.png": "/portfolio/static/media/KakaoTalk_20220217_134854039.c5eefef3d7b1199dbfc2.png",
     "static/media/img.png": "/portfolio/static/media/img.20adfb35ae6a6e5817bf.png",
@@ -29,12 +31,12 @@
     "static/media/free-icon-css-3-5968242.png": "/portfolio/static/media/free-icon-css-3-5968242.4a6549b8c2b4cda8bb88.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.6c4a7b8a.css.map": "/portfolio/static/css/main.6c4a7b8a.css.map",
-    "main.9ab33878.js.map": "/portfolio/static/js/main.9ab33878.js.map",
+    "main.bf3a0d68.css.map": "/portfolio/static/css/main.bf3a0d68.css.map",
+    "main.9f72bcb6.js.map": "/portfolio/static/js/main.9f72bcb6.js.map",
     "787.edd59a96.chunk.js.map": "/portfolio/static/js/787.edd59a96.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c4a7b8a.css",
-    "static/js/main.9ab33878.js"
+    "static/css/main.bf3a0d68.css",
+    "static/js/main.9f72bcb6.js"
   ]
 }
